@@ -1,0 +1,28 @@
+﻿@model Product
+@{
+    ViewData["Title"] = "Update Product" + Model.Name;
+}
+
+<h5 class="mb-5">
+    Create New Product
+</h5>
+
+<form method="post">
+
+    <label class="form-label fw-bold" for="Name">Name</label>
+    <input class="form-control mb-2" asp-for="Name" />
+    <span class="d-block text-danger" asp-validation-for="Name"></span>
+
+    <label class="form-label fw-bold" for="Description">Description</label>
+    <textarea placeholder="write Product Desc Here" class="form-control mb-2" asp-for="Description"></textarea>
+    <span class="d-block text-danger" asp-validation-for="Description"></span>
+
+    <label class="form-label fw-bold" for="Image">Image</label>
+    <input class="form-control mb-4" asp-for="Image" />
+    <span class="d-block text-danger" asp-validation-for="Image"></span>
+
+
+    <button class="btn btn-primary" type="submit">Update</button>
+    <a class="btn btn-success" asp-action="Index">Back</a>
+
+</form>
