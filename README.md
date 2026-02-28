@@ -50,25 +50,3 @@ Perfect for learning modern .NET web apps, interviews, or portfolio showcase.
    dotnet ef database update
    dotnet run
 
-
-├── Controllers/              # ProductController.cs (all CRUD actions)
-├── Data/                     # AppDbContext.cs (EF Core context)
-├── Migrations/               # Auto-generated migration files
-├── Models/                   # Product.cs (entity with properties & validation)
-├── Views/
-│   ├── Products/             # Index.cshtml, Create.cshtml, Edit.cshtml, Details.cshtml, Delete.cshtml
-│   └── Shared/               # _Layout.cshtml (main layout)
-├── wwwroot/                  # css, js, lib (Bootstrap etc.)
-├── Properties/               # launchSettings.json
-├── appsettings.json          # Connection strings & config
-├── ProductCrud_CodeWithPushpa.csproj
-├── ProductCrud_CodeWithPushpa.sln
-└── Program.cs                # App entry point
-
-DATABASE ConnectionString
-{
-  "ConnectionStrings": {
-    "DefaultConnection": "Server=(localdb)\\mssqllocaldb;Database=ProductCrudDb;Trusted_Connection=True;MultipleActiveResultSets=true"
-  }
-}
-
